@@ -1,0 +1,10 @@
+model Class {
+  id         Int     @id @default(autoincrement())
+  name       String
+  instructor String
+  room       String
+  day        String
+  startTime  String
+  endTime    String
+  color      String
+}

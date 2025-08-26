@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { ClassType, useEffect, useState } from 'react';
 import { Calendar, Clock, Plus, Edit2, Trash2, User, MapPin, BookOpen } from 'lucide-react';
 import ClassModal from './ClassModal';
 
@@ -19,9 +19,9 @@ const ClassScheduler = () => {
   const [classes, setClasses] = useState<ClassItem[]>([
     {
       id: 1,
-      name: 'Advanced React Development',
+      name: 'AI',
       instructor: 'Sarah Johnson',
-      room: 'Room 201',
+      room: 'Room 101',
       day: 'Monday',
       startTime: '09:00',
       endTime: '11:00',
@@ -306,3 +306,4 @@ const ClassScheduler = () => {
 };
 
 export default ClassScheduler;
+
